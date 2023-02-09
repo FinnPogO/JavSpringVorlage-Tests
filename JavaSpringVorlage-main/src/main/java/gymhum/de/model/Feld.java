@@ -1,25 +1,24 @@
 package gymhum.de.model;
 
 public class Feld {
-    
-    Boolean istFrei;
-    Boolean zustand; //true = x, false = o 
+    boolean istFrei;
+    boolean zustand;
+    // Zustand true=O und false=X
 
     public Feld(){
         setIstFrei(true);
+        setZustand(true);
     }
-
-    public void setIstFrei(Boolean istFrei) {
+    public void setIstFrei(boolean istFrei) {
         this.istFrei = istFrei;
     }
-    public Boolean getIstFrei() {
-        return istFrei;
-    }
-    public void setZustand(Boolean zustand) {
+    public void setZustand(boolean zustand) {
         this.zustand = zustand;
     }
-    public Boolean getZustand() {
+    public boolean getIstFrei() {
+        return istFrei;
+    }
+    public boolean getZustand() {
         return zustand;
     }
-
 }
